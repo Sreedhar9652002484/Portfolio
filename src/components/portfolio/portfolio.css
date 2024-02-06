@@ -1,0 +1,54 @@
+.portfolio{
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 100vh;
+}
+
+.projects{
+
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    border-bottom: 1px solid #2e344e;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+#hr1{
+    border:2px solid #ff2d03;
+    border-radius: 10px;
+    width: 10vw;
+    right: 29vw;
+    position: relative;
+    bottom: 4vh;     
+}
+#twittertext{
+    position: relative;
+    top: 2vh;
+    font-size: 2rem;
+    color: #ff2d03;
+}
+#twitterpara{
+    font-size: 1.1rem;
+    color: #a3abc2;
+}
+.twitterimg{
+    display: flex;
+    flex-direction: column;
+    
+}
+#image1{
+    height: 15vw;
+}
+#image2{
+    height: 14vw;
+}
+#targetlink{
+    text-decoration: none;
+    color: #ff2d03;
+}
+#targetlink:hover{
+    color: #037fff;
+}
