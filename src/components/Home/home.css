@@ -28,4 +28,43 @@
     align-items: center;
     text-align: center;
   }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   
+  .text {
+    animation: fadeIn 0.5s ease-in-out; /* Apply the animation to the text */
+  }
+  @keyframes fallIn {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+.hii{
+    animation: fallIn 0.5s ease-in-out; /* Apply the animation to the text */
+  }
+
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .text {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  #icon {
+    height: 4vh; /* Adjust size for smaller screens */
+  }
+}

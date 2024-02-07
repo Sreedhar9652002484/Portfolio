@@ -38,3 +38,10 @@
     display: flex;
     gap: 3vw;
 }
+.titlepara{
+    width: 85vw;
+}
+ul li{
+    margin-bottom: 2vh;
+    
+}

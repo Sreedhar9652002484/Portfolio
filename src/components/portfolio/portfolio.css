@@ -4,11 +4,14 @@
     flex-direction: column;
     width: 70vw;
     height: 100vh;
+
+     /* Hide overflow to clip image during animation */
+
 }
 
 .projects{
 
-    height: 35vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     gap: 5vw;
@@ -41,9 +44,22 @@
 }
 #image1{
     height: 15vw;
+    animation: slideInFromLeft 0.5s ease; /* Use the animation */
+
+}
+#image1:hover{
+    height: 20vw;
+    box-shadow: 0 0 20px rgba(243, 234, 234, 0.89); 
+
 }
 #image2{
     height: 14vw;
+    animation: slideInFromLeft 0.5s ease; /* Use the animation */
+}
+#image2:hover{
+    height: 18vw;
+    box-shadow: 0 0 20px rgba(243, 234, 234, 0.89); 
+
 }
 #targetlink{
     text-decoration: none;
@@ -52,3 +68,12 @@
 #targetlink:hover{
     color: #037fff;
 }
+/* Define keyframes for the animation */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%); /* Start from left */
+    }
+    100% {
+      transform: translateX(0); /* End at original position */
+    }
+  }

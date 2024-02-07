@@ -36,6 +36,8 @@ const reducer=(state, action)=>{
 }
 
 export const Header=({home, about, resume, portfolio, contact})=>{
+
+    
     
     const[clicked, dispatch]=useReducer(reducer, intialState);
     const handleHome=()=>{

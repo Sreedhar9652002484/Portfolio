@@ -1,7 +1,5 @@
-import { Icon, IconButton } from '@mui/material';
-import css from './contact.css'
+import './contact.css'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import { orange } from '@mui/material/colors';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import SendIcon from '@mui/icons-material/Send';
 import LanguageIcon from '@mui/icons-material/Language';

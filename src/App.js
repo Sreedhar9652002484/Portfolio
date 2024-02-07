@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import { Header } from './components/header/header';
 import { Home } from './components/Home/home';
 import { About } from './components/About/about';
-import { useReducer, useState } from 'react';
+import { useReducer} from 'react';
 import { Resume } from './components/resume/resume';
 import { Portfolio } from './components/portfolio/portfolio';
 import { Contact } from './components/contact/contact';
@@ -32,6 +31,7 @@ const reducer = (state, action)=>{
       return {...state, home:false, about:false, resume:false, projects:true, contact:false}
     case "CONTACT":
       return {...state, home:false, about:false, resume:false, projects:false, contact:true}
+
   }
 }
 

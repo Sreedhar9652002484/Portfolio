@@ -5,8 +5,7 @@ export const About=()=>{
         <div className='mainabout'>
         <div className='about'>
             <div className='abouttext'><p  id="text1"style={{fontSize:'2.3rem', color:'white', fontWeight:'650'}} >ABOUT ME</p>
-            <hr id='hr'></hr>
-            </div>
+            <hr id='hr'></hr></div>
         
 
                 <div className='details'>
