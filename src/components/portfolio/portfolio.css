@@ -43,7 +43,7 @@
     
 }
 #image1{
-    height: 15vw;
+    height: 15rem;
     animation: slideInFromLeft 0.5s ease; /* Use the animation */
 
 }
@@ -53,7 +53,7 @@
 
 }
 #image2{
-    height: 14vw;
+    height: 14rem;
     animation: slideInFromLeft 0.5s ease; /* Use the animation */
 }
 #image2:hover{
@@ -75,5 +75,32 @@
     }
     100% {
       transform: translateX(0); /* End at original position */
+    }
+  }
+
+  @media screen  and (max-width: 1150px){
+    .projects{
+
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio{
+        width: 95%;
+    }
+    #image1{
+        width: 25rem;
+    }
+    #image1:hover{
+        width: 25rem;
+        height: 15rem;
+
+    }
+    #image2{
+        width: 25rem;
+    }
+    #image2:hover{
+        width: 25rem;
+        height: 15rem;
+
     }
   }

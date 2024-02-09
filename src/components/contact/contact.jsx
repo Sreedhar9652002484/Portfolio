@@ -18,7 +18,7 @@ export const Contact=()=>{
                 </div>
                 </div>
                 <div className='info'>
-                <p id='infotext'>Contact information <br/>
+                <p id='infotext1'>Contact information <br/>
                 <span id='desc'>I'am open for any suggestion or just have a chat</span>
                 </p>
                 <div className='icons1'>

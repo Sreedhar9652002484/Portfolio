@@ -5,8 +5,8 @@ import notes from '../../assests/notes.png'
 export const Portfolio = () => {
     return (
         <div className='portfolio'>
-            <div className='abouttext1'><p id="resumetext" style={{ fontSize: '2.3rem', color: 'white', fontWeight: '650' }} >PROJECTS</p>
-                <hr id='hr1'></hr>
+            <div className='abouttext'><p id="resumetext" style={{ fontSize: '2.3rem', color: 'white', fontWeight: '650' }} >PROJECTS</p>
+                <hr id='hr'></hr>
             </div>
             <div className='projects'>
                 <div className='twitterimg'>

@@ -61,6 +61,7 @@
 /* Add media queries for responsiveness */
 @media screen and (max-width: 768px) {
   .text {
+    width: 95%;
     padding: 0 10px; /* Adjust padding for smaller screens */
   }
 
