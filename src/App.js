@@ -7,6 +7,8 @@ import { Portfolio } from './components/portfolio/portfolio';
 import { Contact } from './components/contact/contact';
 import Navbar from './components/collapsedmenu/menu';
 import { Header } from './components/header/header';
+import MenuOpenOutlinedIcon from '@mui/icons-material/MenuOpenOutlined';
+import { IconButton } from '@mui/material';
 
 function App() {
   const initialState = {
@@ -57,11 +59,9 @@ function App() {
       <div className='left'>
         {isSmallScreen ? (
           <div>
-            
           <div className={`menu-toggle ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-            <div className="line" onClick={toggleMenu}></div>
-            <div className="line"></div>
-            <div className="line"></div>
+           
+            <MenuOpenOutlinedIcon style={{color:'white',fontSize:'3rem', backgroundColor:'blue',position:'fixed'}}></MenuOpenOutlinedIcon>
           </div>
           <div className={`menu ${isOpen ? 'active' : ''}`}>
             <div className='menu-content'>

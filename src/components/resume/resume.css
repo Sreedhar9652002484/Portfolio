@@ -1,4 +1,6 @@
-
+.resume{
+    padding: 5vw;
+}
 .resumecontent{
     width: auto;
     height: auto;
@@ -15,7 +17,7 @@
 
 }
 #paratext{
-    color: #a3abc2;
+    color: #ffff;
     font-size: 1.1rem;
 
 }

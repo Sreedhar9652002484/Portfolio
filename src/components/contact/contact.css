@@ -37,7 +37,7 @@ input[type=text]::placeholder, textarea::placeholder {
 }
 
 #button {
-    background-color: #ff2d03;
+    background-color: hwb(10 1% 0%);
     width: 50%; /* Adjust width for smaller screens */
     height: 5vh; /* Adjust height as needed */
     border: 1px solid black;

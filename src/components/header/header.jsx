@@ -3,6 +3,11 @@ import profile from '../../assests/Sree.jpg'
 import { useReducer, useState } from 'react'
 import { Home } from '../Home/home'
 import { About } from '../About/about'
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
+import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
+import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
+import MarkEmailReadOutlinedIcon from '@mui/icons-material/MarkEmailReadOutlined';
 
 const intialState={
     click1:true,
@@ -61,11 +66,11 @@ export const Header=({home, about, resume, portfolio, contact})=>{
                 <img src={profile} id='image'></img>
             </div>
             <div className="content">
-                <div className='home' onClick={()=> {dispatch({type:'click1'}); handleHome()}}style={clicked.click1 ?{backgroundColor: "#037fff",color:'white'}:{}}><p style={clicked.click1 ?{backgroundColor: "#037fff"}:{}} > HOME</p></div>
-                <div className='home' onClick={()=>{dispatch({type:'click2'}); handleAbout()}} style={clicked.click2? {backgroundColor: "#037fff",color:'white'}:{}}><p style={clicked.click2?{backgroundColor: "#037fff"}:{}}>ABOUT</p></div>
-                <div className='home' onClick={()=>{dispatch({type:'click3'}); handleResume()}} style={clicked.click3?  {backgroundColor: "#037fff",color:'white'}:{}}><p style={clicked.click3 ?{backgroundColor: "#037fff"}:{}}>  RESUME</p></div>
-                <div className='home' onClick={()=>{dispatch({type:'click4'});handlePortfolio()}} style={clicked.click4?  {backgroundColor: "#037fff",color:'white'}:{}}><p style={clicked.click4 ?{backgroundColor: "#037fff"}:{}}> PORTFOLIO</p></div>
-                <div className='home' onClick={()=>{dispatch({type:'click5'});handleContact()}}style={clicked.click5? {backgroundColor: "#037fff",color:'white'}:{}}><p style={clicked.click5 ?{backgroundColor: "#037fff"}:{}}>CONTACT</p></div>
+                <div className='home' onClick={()=> {dispatch({type:'click1'}); handleHome()}}style={clicked.click1 ?{color:'#ff2d03'}:{}}><div className='texticon'><HomeOutlinedIcon ></HomeOutlinedIcon><p > HOME</p></div></div>
+                <div className='home' onClick={()=>{dispatch({type:'click2'}); handleAbout()}} style={clicked.click2? {color:'#ff2d03'}:{}}><div className='texticon'><Person2OutlinedIcon ></Person2OutlinedIcon><p >ABOUT</p></div></div>
+                <div className='home' onClick={()=>{dispatch({type:'click3'}); handleResume()}} style={clicked.click3?  {color:'#ff2d03'}:{}}><div className='texticon' ><InsertDriveFileOutlinedIcon ></InsertDriveFileOutlinedIcon><p >  RESUME</p></div></div>
+                <div className='home' onClick={()=>{dispatch({type:'click4'});handlePortfolio()}} style={clicked.click4?  {color:'#ff2d03'}:{}}><div className='texticon'><BusinessCenterOutlinedIcon></BusinessCenterOutlinedIcon><p > PORTFOLIO</p></div></div>
+                <div className='home' onClick={()=>{dispatch({type:'click5'});handleContact()}}style={clicked.click5? {color:'#ff2d03'}:{}}><div className='texticon'><MarkEmailReadOutlinedIcon ></MarkEmailReadOutlinedIcon><p >CONTACT</p></div></div>
             </div>
         </div>
     )
