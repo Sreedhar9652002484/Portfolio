@@ -24,13 +24,13 @@
     bottom: 4vh;
     
 }
+
 .details{
-    padding: 3vw;
+    padding-left: 4vw;
     color: #ffff;
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 5vw;
+    
     animation: fadeIn 0.7s ease-in-out; /* Apply the animation to the text */
 
 }
@@ -51,8 +51,8 @@
 /* Add media queries for responsiveness */
 @media screen and (max-width: 1500px) {
   .about {
-      width: 100%; /* Full width on smaller screens */
-      padding: 10px; /* Adjust padding for smaller screens */
+      width: 90%; /* Full width on smaller screens */
+      padding: 0; /* Adjust padding for smaller screens */
   }
   .abouttext {
       display: flex;
